@@ -8,17 +8,17 @@ namespace Labb3WPFviews.Models
         public string Title { get; }
 
 
-        public Question GetRandomQuestion()
-        {
+        //public Question GetRandomQuestion()
+        //{
 
-        }
-        public void AddQuestion(string statement, params string[] answers, int correctAnser)
-        {
+        //}
+        //public void AddQuestion(string statement, params string[] answers, int correctAnser)
+        //{
 
-        }
-        public void RemoveQuestion(int index)
-        {
+        //}
+        //public void RemoveQuestion(int index)
+        //{
 
-        }
+        //}
     }
 }

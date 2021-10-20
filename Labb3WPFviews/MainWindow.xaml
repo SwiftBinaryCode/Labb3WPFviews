@@ -12,6 +12,7 @@
     mc:Ignorable="d">
     <Grid Background="Black">
 
+      
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
@@ -43,24 +44,21 @@
                 Background="White"
                 Content="Edit Quiz" />
         </StackPanel>
+        <ContentControl Content="{Binding SelectedViewModel}"/>
         <views:PlayView
             x:Name="PlayView"
-            Grid.Row="2"
+            Grid.Row="1"
             DataContext="{Binding}"
             Visibility="Collapsed"/>
-        <views:CreateView 
+        <views:EditView
             x:Name="EditView"
-            Grid.Row="2"
+            Grid.Row="1"
             DataContext="{Binding}"
             Visibility="Collapsed"/>
-        <views:EditView 
-            x:Name="EditView"
-            Grid.Row="2"
+        <views:CreateView
+            x:Name="CreateView"
+            Grid.Row="1"
             DataContext="{Binding}"
             Visibility="Collapsed"/>
-
-
-
-
     </Grid>
 </Window>

@@ -25,6 +25,8 @@ namespace Labb3WPFviews
         public MainWindow()
         {
             InitializeComponent();
+
+            DataContext = new MainWindowViewModel();
         }
     }
 }
